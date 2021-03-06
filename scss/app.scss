@@ -1,0 +1,64 @@
+/*---------------------------------------------------------------------------
+  Template: Web Studio Solutions - Template Sass Files Structure
+  Author: Theme_Author_Name
+  Version: Theme_Version@1.0
+----------------------------------------------------------------------------*/
+
+// ---------------------------------
+// ------ Mixins & Variables -------
+// ---------------------------------
+@import 'mixins'; //                           mixins
+@import 'variables'; //                        variables
+
+// ---------------------------------
+// ------------ common -------------
+// ---------------------------------
+@import 'common/general'; //                   general
+@import 'common/utilities'; //                 utilitie
+@import 'common/fonts'; //                     fonts
+
+// ---------------------------------
+// ---------- Template -------------
+// ---------------------------------
+// @import 'template/side-nav'; //                side-nav
+// @import 'template/quick-view'; //              quick-view
+// @import 'template/header'; //                  header
+// @import 'template/footer'; //                  footer
+// @import 'template/page-container'; //          page-container
+
+//---------------------------------
+//---------- Components -----------
+//---------------------------------
+// @import 'components/accordion';//              accordion
+// @import 'components/modal';//                  modal
+// @import 'components/dropdown';//               dropdown
+// @import 'components/tooltips';//               tooltips
+// @import 'components/popovers';//               popovers
+// @import 'components/tabs';//                   tabs
+// @import 'components/carousel';//               carousel
+// @import 'components/toasts';//                 toasts
+// @import 'components/progress-bar';//           progress-bar
+// @import 'components/menu';//                   menu
+
+//---------------------------------
+//------------- Tables ------------
+//---------------------------------
+// @import 'tables/tables';//                     tables
+
+//---------------------------------
+//-------------- Forms ------------
+//---------------------------------
+// @import 'forms/input';//                       input
+// @import 'forms/select';//                      select
+// @import 'forms/checkbox';//                    checkbox
+// @import 'forms/radio';//                       radio
+// @import 'forms/switch';//                      switch
+// @import 'forms/star_rating';//                 star_rating
+// @import 'forms/validation';//                  validation
+
+
+// ---------------------------------
+// ------------- Custom ------------
+// ---------------------------------
+@import 'custom';//                            custom
+

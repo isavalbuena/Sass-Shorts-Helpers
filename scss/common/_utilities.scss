@@ -1,0 +1,109 @@
+// ------------------------------------
+// ------------ utilities -------------
+// ------------------------------------
+
+// /* --------------------------- */
+// /* --------- PADDING --------- */
+// /* --------------------------- */
+
+/* ------ padding----- */
+@for $i from 1 through 30{
+    $p: 5px * $i;
+    $p_label: 5 * $i;
+
+    .p-#{$p_label} { 
+        padding: $p !important;
+    }
+}
+/* ------ padding top----- */
+@for $i from 1 through 30{
+    $p: 5px * $i;
+    $p_label: 5 * $i;
+
+    .p-t-#{$p_label} { 
+        padding-top: $p !important;
+    }
+}
+/* ------ padding bottom----- */
+@for $i from 1 through 30{
+    $p: 5px * $i;
+    $p_label: 5 * $i;
+    .p-b-#{$p_label} {
+        padding-bottom: $p !important;
+    }
+}
+/* --- padding horizontal---- */
+@for $i from 1 through 30{
+    $p: 5px * $i;
+    $p_label: 5 * $i;
+    
+    .p-x-#{$p_label} {
+        padding-left: $p !important;
+        padding-right: $p !important
+    }
+}
+/* ---- padding vertical----- */
+@for $i from 1 through 30{
+    $p: 5px * $i;
+    $p_label: 5 * $i;
+
+    
+    .p-y-#{$p_label} {
+        padding-top: $p !important;
+        padding-bottom: $p !important
+    }
+}
+
+/* --------------------------- */
+/* --------- MARGIN --------- */
+/* --------------------------- */
+
+/* --------- margin ----- */
+@for $i from 1 through 30{
+    $m: 5px * $i;
+    $m_label: 5 * $i;
+
+    .m-#{$m_label} {
+        margin: $m !important;
+    }
+}
+/* ---- margin horizontal----- */
+@for $i from 1 through 30{
+    $m: 5px * $i;
+    $m_label: 5 * $i;
+
+    .m-x-#{$m_label} {
+        margin-left: $m !important;
+        margin-right: $m !important
+    }
+}
+/* ------ margin vertical----- */
+@for $i from 1 through 30{
+    $m: 5px * $i;
+    $m_label: 5 * $i;
+
+    .m-y-#{$m_label} {
+        margin-top: $m !important;
+        margin-bottom: $m !important
+    }
+}
+/* ------ margin top----- */
+@for $i from 1 through 30{
+    $m: 5px * $i;
+    $m_label: 5 * $i;
+    .m-t-#{$m_label} {
+        margin-top: $m !important;
+    }
+}
+/* ------ margin bottom----- */
+@for $i from 1 through 30{
+    $m: 5px * $i;
+    $m_label: 5 * $i;
+    .m-b-#{$m_label} {
+        margin-bottom: $m !important;
+    }
+}
+
+/* --------------------------- */
+/* --------- WIDTH --------- */
+/* --------------------------- */
