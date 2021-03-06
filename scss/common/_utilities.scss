@@ -2,10 +2,6 @@
 // ------------ utilities -------------
 // ------------------------------------
 
-// /* --------------------------- */
-// /* --------- PADDING --------- */
-// /* --------------------------- */
-
 /* ------ padding----- */
 @for $i from 1 through 30{
     $p: 5px * $i;
@@ -54,10 +50,6 @@
     }
 }
 
-/* --------------------------- */
-/* --------- MARGIN --------- */
-/* --------------------------- */
-
 /* --------- margin ----- */
 @for $i from 1 through 30{
     $m: 5px * $i;
@@ -104,6 +96,109 @@
     }
 }
 
-/* --------------------------- */
-/* --------- WIDTH --------- */
-/* --------------------------- */
+/* ------------------------------------------ */
+/* --------- relative to the parent --------- */
+/* ---------------- width ------------------- */
+@for $i from 1 through 20{
+    $w: percentage(.05 * $i);
+    $w_label: (5 * $i);
+    .w-#{$w_label} {
+        width: $w !important;
+    }
+}
+/* -------------- min width ----------------- */
+@for $i from 1 through 20{
+    $w: percentage(.05 * $i);
+    $w_label: (5 * $i);
+    .min-w-#{$w_label} {
+        min-width: $w !important;
+    }
+}
+/* -------------- max width ----------------- */
+@for $i from 1 through 20{
+    $w: percentage(.05 * $i);
+    $w_label: (5 * $i);
+    .max-w-#{$w_label} {
+        max-width: $w !important;
+    }
+}
+/* ------------------------------------------ */
+/* --------------- height ------------------- */
+@for $i from 1 through 20{
+    $h: percentage(.05 * $i);
+    $h_label: (5 * $i);
+    .h-#{$h_label} {
+        height: $h !important;
+    }
+}
+/* -------------- min height ---------------- */
+@for $i from 1 through 20{
+    $h: percentage(.05 * $i);
+    $h_label: (5 * $i);
+    .min-h-#{$h_label} {
+        min-height: $h !important;
+    }
+}
+/* -------------- max height ---------------- */
+@for $i from 1 through 20{
+    $h: percentage(.05 * $i);
+    $h_label: (5 * $i);
+    .max-h-#{$h_label} {
+        max-height: $h !important;
+    }
+}
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/* ------- Relative to the viewport --------- */
+/* -------------- vh width ------------------ */
+@for $i from 1 through 20{
+    $w: 5vw * $i;
+    $w_label: 5 * $i;
+    .vw-#{$w_label} {
+        width: $w !important;
+    }
+}
+/* ------------ min vh width ---------------- */
+@for $i from 1 through 20{
+    $w: 5vw * $i;
+    $w_label: 5 * $i;
+    .min-vw-#{$w_label} {
+        min-width: $w !important;
+    }
+}
+/* ------------ max vh width ---------------- */
+@for $i from 1 through 20{
+    $w: 5vw* $i;
+    $w_label: 5 * $i;
+    .max-vw-#{$w_label} {
+        max-width: $w !important;
+    }
+}
+/* ------------------------------------------ */
+/* --------------- height ------------------- */
+@for $i from 1 through 20{
+    $h: 5vw * $i;
+    $h_label: 5 * $i;
+    .vh-#{$h_label} {
+        height: $h !important;
+    }
+}
+/* -------------- min height ---------------- */
+@for $i from 1 through 20{
+    $h: 5vh * $i;
+    $h_label: 5 * $i;
+    .min-vh-#{$h_label} {
+        min-height: $h !important;
+    }
+}
+/* -------------- max height ---------------- */
+@for $i from 1 through 20{
+    $h: 5vh * $i;
+    $h_label: 5 * $i;
+    .max-vh-#{$h_label} {
+        max-height: $h !important;
+    }
+}
+/* ------------------------------------------ */
+
