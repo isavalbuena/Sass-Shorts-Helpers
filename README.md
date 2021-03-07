@@ -1,19 +1,10 @@
 <p align="center">
   	<a href="" rel="noopener">
-		<img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo">
+		<img width=200px height=200px src="src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/288_Sass_logo-512.png" alt="Project logo">
 	</a>
 </p>
-
-<h3 align="center">Project Title</h3>
-
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)](#)
-[![GitHub Issues](0)](#)
-[![GitHub Pull Requests](0)](#)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
-
-</div>
+ 
+<h3 align="center">Sass Helper's</h3>
 
 ---
 
@@ -23,31 +14,90 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [padding](#padding)
+- [padding-top](#pt)
+- [padding-bottom](#pb)
+- [padding-left](#pl)
+- [padding-right](#pr)
+- [padding-horizontal](#ph)
+- [padding-vertical](#pv)
+<!-- - [Acknowledgments](#acknowledgement) -->
 
-## 🧐 About <a name = "about"></a>
+<!-- ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Write about 1-2 paragraphs describing the purpose of your project. -->
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Ready for Copy and paste in your Scss project!
 
-### Prerequisites
+## Padding <a name = "padding"></a>
 
-What things you need to install the software and how to install them.
+The repetitions are increasing from 5 to 5 from 0 to 30.
 
+#### SCSS
+
+```scss
+@for $i from 0 through 30{
+    $m: 5; // The repetitions are increasing from 5 to 5 from 0 to 30.
+	$p: ($m * $i)px;
+    $p_label: ($m) * $i;
+
+    .p-#{$p_label} { 
+        padding: $p !important;
+    }
+}
 ```
-Give examples
+#### CSS
+```css
+.p-0 {
+  padding: 0 px !important;
+}
+.p-5 {
+  padding: 5 px !important;
+}
+.p-10 {
+  padding: 10 px !important;
+}
+.p-15 {
+  padding: 15 px !important;
+}
+...
 ```
+## PADDING TOP <a name = "pt">:top:</a>
+
+The repetitions are increasing from 5 to 5 from 0 to 30.
+
+#### SCSS
+
+```scss
+@for $i from 0 through 30{
+    $m: 5;
+    $p: ($m * $i)px;
+    $p_label: 5 * $i;
+
+    .p-t-#{$p_label} { 
+        padding-top: $p !important;
+    }
+}
+```
+#### CSS
+```css
+.p-t-0 {
+  padding-top: 0 px !important;
+}
+.p-t-5 {
+  padding-top: 5 px !important;
+}
+.p-t-10 {
+  padding-top: 10 px !important;
+}
+.p-t-15 {
+  padding-top: 15 px !important;
+}
+...
+```
+
 
 ### Installing
 

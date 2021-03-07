@@ -1,29 +1,94 @@
 // Custom Color
 $custom-1: #fff !default;
 
+:root {
+    --bs-blue: #0f4fb0;
+    --bs-indigo: #5713c6;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0f4fb0;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+    --bs-font-monospace: 'Poppins', sans-serif;
+    --bs-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
+}
+
 // Start with assigning color names to specific hex values.
 $white:                     #fff !default;
 $black:                     #000 !default;
-$red:                       #de4436 !default;
-$orange:                    #fa8c16 !default;
 $gold:                      #ffc107 !default;
-$green:                     #52c41a !default;
-$blue:                      #3f87f5 !default; 
-$cyan:                      #00c9a7 !default;
-$purple:                    #886cff  !default; 
 $magenta:                   #eb2f96 !default;
 $volcano:                   #fa541c !default;
 $lime:                      #a0d911 !default;
 $geekblue:                  #2f54eb !default;
-$cloudblue:                 #02d3ef !default;
-
-
+$cloudblue:                 var(--bs-cyan) !default;
+$blue:                      #0f4fb0 !default;
+$indigo:                    var(--bs-indigo)!default;
+$purple:                    var(--bs-purple)!default;
+$pink:                      var(--bs-pink)!default;
+$red:                       var(--bs-red)!default;
+$orange:                    var(--bs-orange)!default;
+$yellow:                    var(--bs-yellow)!default;
+$green:                     var(--bs-green)!default;
+$teal:                      var(--bs-teal)!default;
+$cyan:                      var(--bs-cyan)!default;
 // Create grayscale
 $gray-dark:                 #2a2a2a !default;
 $gray:                      #53535f !default;
-$gray-light:                #72849a  !default; 
+$gray-light:                #72849a !default; 
 $gray-lighter:              #ededed !default;
 $gray-lightest:             #f1f2f3 !default;
+
+$white:                     #fff !default;
+$gray-100:                  #f8f9fa !default;
+$gray-200:                  #e9ecef !default;
+$gray-300:                  #dee2e6 !default;
+$gray-400:                  #ced4da !default;
+$gray-500:                  #adb5bd !default;
+$gray-600:                  #6c757d !default;
+$gray-700:                  #495057 !default;
+$gray-800:                  #343a40 !default;
+$gray-900:                  #212529 !default;
+$black:                     #000 !default;
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "light-1":    $gray-light,
+  "light-2":    $gray-lighter,
+  "light-3":    $gray-lightest,
+  "dark":       $dark,
+  "indigo":     $indigo
+);
 
 // Two Tones
 $tone-magenta:              $magenta !default;  
@@ -66,14 +131,14 @@ $tone-purple-light:         rgba($purple, 0.1) !default;
 $tone-loop: (
     magenta     $tone-magenta     $tone-magenta-light,
     red         $tone-red         $tone-red-light,
-    volcano       $tone-volcano     $tone-volcano-light,
+    // volcano       $tone-volcano     $tone-volcano-light,
     orange      $tone-orange      $tone-orange-light,
     gold        $tone-gold        $tone-gold-light,
     lime        $tone-lime        $tone-lime-light,
     green       $tone-green       $tone-green-light,
     cyan        $tone-cyan        $tone-cyan-light,
     blue        $tone-blue        $tone-blue-light,
-    geekblue      $tone-geekblue    $tone-geekblue-light,
+    // geekblue      $tone-geekblue    $tone-geekblue-light,
     purple      $tone-purple      $tone-purple-light
 );
 
@@ -249,7 +314,7 @@ $border-radius-circle:   50% !default;
 $border-radius-round:    50px !default;
 $border-width:           1px !default;
 
-
+$border-style: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit;
 
 // Buttons
 //

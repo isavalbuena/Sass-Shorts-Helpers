@@ -7,20 +7,11 @@
 
 <p align="center">
 	<a href="" rel="noopener">
-		<img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo">
+		<img width=200px height=200px src="src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/288_Sass_logo-512.png" alt="Project logo">
 	</a>
 </p>
 
-<h3 align="center">Project Title</h3>
-
-<div align="center">
-
-<p><a href="#"><img src="https://img.shields.io/badge/status-active-success.svg" alt="Status" /></a>
-<a href="#"><img src="0" alt="GitHub Issues" /></a>
-<a href="#"><img src="0" alt="GitHub Pull Requests" /></a>
-<a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a></p>
-
-</div>
+<h3 align="center">Sass Helper's</h3>
 
 <hr />
 
@@ -31,30 +22,90 @@
 <h2 id="📝tableofcontents">📝 Table of Contents</h2>
 
 <ul>
-<li><a href="#about">About</a></li>
-<li><a href="#getting_started">Getting Started</a></li>
-<li><a href="#deployment">Deployment</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#built_using">Built Using</a></li>
-<li><a href="../TODO.md">TODO</a></li>
-<li><a href="../CONTRIBUTING.md">Contributing</a></li>
-<li><a href="#authors">Authors</a></li>
-<li><a href="#acknowledgement">Acknowledgments</a></li>
+<li><a href="#padding">padding</a></li>
+<li><a href="#pt">padding-top</a></li>
+<li><a href="#pb">padding-bottom</a></li>
+<li><a href="#pl">padding-left</a></li>
+<li><a href="#pr">padding-right</a></li>
+<li><a href="#ph">padding-horizontal</a></li>
+<li><a href="#pv">padding-vertical</a>
+<!-- - [Acknowledgments](#acknowledgement) --></li>
 </ul>
 
-<h2 id="🧐aboutanameabouta">🧐 About &lt;a name = &#8220;about&#8221;&gt;</a></h2>
+<p>&lt;!&#8211; ## 🧐 About &lt;a name = &#8220;about&#8221;&gt;</a></p>
 
-<p>Write about 1&#8211;2 paragraphs describing the purpose of your project.</p>
+<p>Write about 1&#8211;2 paragraphs describing the purpose of your project. &#8211;&gt;</p>
 
-<h2 id="🏁gettingstartedanamegetting_starteda">🏁 Getting Started &lt;a name = &#8220;getting_started&#8221;&gt;</a></h2>
+<h2 id="gettingstartedanamegetting_starteda">Getting Started &lt;a name = &#8220;getting_started&#8221;&gt;</a></h2>
 
-<p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See <a href="#deployment">deployment</a> for notes on how to deploy the project on a live system.</p>
+<p>Ready for Copy and paste in your Scss project!</p>
 
-<h3 id="prerequisites">Prerequisites</h3>
+<h2 id="paddinganamepaddinga">Padding &lt;a name = &#8220;padding&#8221;&gt;</a></h2>
 
-<p>What things you need to install the software and how to install them.</p>
+<p>The repetitions are increasing from 5 to 5 from 0 to 30.</p>
 
-<pre><code>Give examples
+<h4 id="scss">SCSS</h4>
+
+<pre><code class="scss">@for $i from 0 through 30{
+    $m: 5; // The repetitions are increasing from 5 to 5 from 0 to 30.
+	$p: ($m * $i)px;
+    $p_label: ($m) * $i;
+
+    .p-#{$p_label} { 
+        padding: $p !important;
+    }
+}
+</code></pre>
+
+<h4 id="css">CSS</h4>
+
+<pre><code class="css">.p-0 {
+  padding: 0 px !important;
+}
+.p-5 {
+  padding: 5 px !important;
+}
+.p-10 {
+  padding: 10 px !important;
+}
+.p-15 {
+  padding: 15 px !important;
+}
+...
+</code></pre>
+
+<h2 id="paddingtopanamept:top:a">PADDING TOP &lt;a name = &#8220;pt&#8221;&gt;:top:</a></h2>
+
+<p>The repetitions are increasing from 5 to 5 from 0 to 30.</p>
+
+<h4 id="scss">SCSS</h4>
+
+<pre><code class="scss">@for $i from 0 through 30{
+    $m: 5;
+    $p: ($m * $i)px;
+    $p_label: 5 * $i;
+
+    .p-t-#{$p_label} { 
+        padding-top: $p !important;
+    }
+}
+</code></pre>
+
+<h4 id="css">CSS</h4>
+
+<pre><code class="css">.p-t-0 {
+  padding-top: 0 px !important;
+}
+.p-t-5 {
+  padding-top: 5 px !important;
+}
+.p-t-10 {
+  padding-top: 10 px !important;
+}
+.p-t-15 {
+  padding-top: 15 px !important;
+}
+...
 </code></pre>
 
 <h3 id="installing">Installing</h3>
